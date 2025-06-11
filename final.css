@@ -1,0 +1,115 @@
+body {
+  
+
+background-image: url(imagenes/portada3.jpg);
+
+background-position center center;
+
+background-repeat:no-repead;
+
+background-size: cover;
+
+background-attachment: fixed;
+margin: 0;
+  padding: 0%;
+    
+}
+
+.container {
+ 
+  max-width: 900px;
+  margin:  auto;
+  padding: 20px;
+  
+}
+
+h1, h2 {
+  text-align: center;
+ 
+}
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.rey{
+        
+        text-align: center;
+        background: linear-gradient(to right, #6aa2ff, #aacaff, #2b43ff, #ffe740);
+        padding: 0%;
+        font-family: fantasy;
+        border-radius: 6%;
+        opacity: 0.5;
+
+    }
+    button{
+        
+        text-align: center;
+        margin: 5%;
+        border-radius: 25%;
+       border: 0px;
+        padding: 2%;
+        font-family: fantasy;
+}
+
+.cat-img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100px;
+}
+
+p{
+  text-align: justify; 
+  color: white;
+}
+
+.ola{
+    border-radius: 90px;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    animation: mover 5s infinite alternate ease-in-out, rotateClockwise 5s ease-in-out infinite;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    background: linear-gradient(to right, #d995ff, #ff5f55, #ffd26a, #caffaa, #80ffd6);
+    background-clip: text;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+ 
+
+  .cat-img {
+    width: 80px;
+  }
+  audio {
+      opacity: 0.5;
+  }
+  
+}
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100vw - 70px); 
+    }
+}
+
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
